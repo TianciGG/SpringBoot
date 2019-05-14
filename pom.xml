@@ -1,21 +1,29 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>chuancy</groupId>
-  <artifactId>SpringBoot</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <!-- 必须要引入继承springboot-parent，因为该父工程帮助实现了很多jar包的依赖管理，不要写jar包版本，这样可以控制jar包版本冲突的问题 。-->
-  <parent>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-parent</artifactId>
-      <version>1.3.3.RELEASE</version>
-  </parent>
-  <dependencies>
-      <!-- 不需要引入SpringMVC，SpringBoot默认集成，只需要引入SpringBoot的web组件：springboot-web即可。 -->
-      <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-web</artifactId>
-      </dependency>
-  </dependencies>
-      
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>chuancy</groupId>
+	<artifactId>SpringBoot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- 必须要引入继承springboot-parent，因为该父工程帮助实现了很多jar包的依赖管理，不要写jar包版本，这样可以控制jar包版本冲突的问题 
+		。 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.3.3.RELEASE</version>
+	</parent>
+	<dependencies>
+		<!-- 不需要引入SpringMVC，SpringBoot默认集成，只需要引入SpringBoot的web组件：springboot-web即可。 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- 引入freeMarker的依赖包. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+
+	</dependencies>
+
 </project>
